@@ -41,6 +41,7 @@
       ...indexById(pageData.massages.items),
       ...indexById(pageData.ateliers.items),
     });
+    setupImageModal();
   }
 
   if (pageKey === 'dominique') {
@@ -200,7 +201,7 @@ function renderFormations(section, gridId) {
   const grid = document.getElementById(gridId);
   if (!grid) return;
   grid.innerHTML = section.items.map(item => `
-    <article class="formation-card fade-in">
+    <article class="formation-card fade-in" data-image-modal="${escapeAttr(item.image)}" data-image-alt="${escapeAttr(item.title)}" tabindex="0" role="button" aria-label="Voir le détail : ${escapeAttr(item.title)}">
       <img src="${escapeAttr(item.image)}" alt="${escapeAttr(item.title)}" class="formation-card-image" loading="lazy" />
       <div class="formation-card-body">
         <h3>${escapeHtml(item.title)}</h3>
@@ -223,12 +224,15 @@ function setupModals(byId) {
   const modalClose = document.querySelector('.modal-close');
   if (!overlay || !modalBody) return;
 
+  const modalBox = overlay.querySelector('.modal-box');
+
   document.addEventListener('click', e => {
     const card = e.target.closest('[data-modal]');
     if (!card) return;
     const item = byId[card.dataset.modal];
     if (!item) return;
     modalBody.innerHTML = renderModalContent(item);
+    modalBox?.classList.remove('is-image-only');
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
   });
@@ -240,6 +244,40 @@ function setupModals(byId) {
   modalClose?.addEventListener('click', closeModal);
   overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+}
+
+// Modal image-only (utilisé pour les flyers de formation)
+function setupImageModal() {
+  const overlay = document.getElementById('modal-overlay');
+  const modalBox = overlay?.querySelector('.modal-box');
+  const modalBody = document.getElementById('modal-body');
+  if (!overlay || !modalBody || !modalBox) return;
+
+  document.addEventListener('click', e => {
+    const card = e.target.closest('[data-image-modal]');
+    if (!card) return;
+    const src = card.dataset.imageModal;
+    const alt = card.dataset.imageAlt || '';
+    modalBody.innerHTML = `<img src="${escapeAttr(src)}" alt="${escapeAttr(alt)}" class="modal-image-fullsize" />`;
+    modalBox.classList.add('is-image-only');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const card = document.activeElement?.closest('[data-image-modal]');
+    if (!card) return;
+    e.preventDefault();
+    card.click();
+  });
+
+  // Nettoyage du flag is-image-only à la fermeture
+  const reset = () => modalBox.classList.remove('is-image-only');
+  overlay.addEventListener('transitionend', () => { if (!overlay.classList.contains('open')) reset(); });
+  document.querySelector('.modal-close')?.addEventListener('click', reset);
+  overlay.addEventListener('click', e => { if (e.target === overlay) reset(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') reset(); });
 }
 
 function renderModalContent(item) {

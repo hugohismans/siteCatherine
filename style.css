@@ -864,12 +864,19 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
   display: flex;
   flex-direction: column;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
-.formation-card:hover {
+.formation-card:hover,
+.formation-card:focus-visible {
   transform: translateY(-3px);
   box-shadow: var(--shadow);
   border-color: var(--clr-accent-soft);
+  outline: none;
+}
+
+.formation-card:focus-visible {
+  border-color: var(--clr-accent);
 }
 
 .formation-card-image {
@@ -1061,6 +1068,28 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
   position: relative;
   box-shadow: var(--shadow-lg);
   animation: slideUp 0.3s ease;
+}
+
+.modal-box.is-image-only {
+  max-width: 900px;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.modal-box.is-image-only .modal-body {
+  padding: 0;
+  background: transparent;
+}
+
+.modal-image-fullsize {
+  width: 100%;
+  height: auto;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: block;
 }
 
 @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
