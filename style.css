@@ -66,7 +66,7 @@ body.theme-duo {
    ============================================= */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
 
 body {
   font-family: var(--ff-sans);
@@ -227,6 +227,7 @@ h1, h2, h3, h4 { font-family: var(--ff-serif); font-weight: 500; line-height: 1.
 .nav-header {
   position: fixed;
   top: 0; left: 0; right: 0;
+  width: 100%;
   height: var(--nav-h);
   background: rgba(250, 246, 239, 0.92);
   backdrop-filter: blur(12px);
@@ -257,13 +258,20 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--clr-ink);
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
 }
 
 .nav-brand-script {
   font-family: var(--ff-script);
   color: var(--clr-accent-dark);
-  font-size: 1.5rem;
+  font-size: clamp(1.05rem, 4vw, 1.5rem);
   line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
 }
 
 .nav-brand-sub {
@@ -318,6 +326,7 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
   font-size: 1.5rem;
   color: var(--clr-ink);
   padding: 0.4rem;
+  flex-shrink: 0;
 }
 
 /* Burger menu mobile */
