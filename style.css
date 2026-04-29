@@ -225,8 +225,8 @@ h1, h2, h3, h4 { font-family: var(--ff-serif); font-weight: 500; line-height: 1.
    NAV
    ============================================= */
 .nav-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: var(--nav-h);
   background: rgba(250, 246, 239, 0.92);
@@ -260,6 +260,10 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
   color: var(--clr-ink);
   min-width: 0;
   flex: 1 1 auto;
+}
+
+.nav-brand > span {
+  min-width: 0;
   overflow: hidden;
 }
 
@@ -267,7 +271,8 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
   font-family: var(--ff-script);
   color: var(--clr-accent-dark);
   font-size: clamp(1.05rem, 4vw, 1.5rem);
-  line-height: 1;
+  line-height: 1.4;
+  padding-top: 0.15em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -356,8 +361,8 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
    HERO
    ============================================= */
 .hero {
-  min-height: 88vh;
-  padding: calc(var(--nav-h) + 3rem) 1.25rem 4rem;
+  min-height: calc(88vh - var(--nav-h));
+  padding: 3rem 1.25rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -486,7 +491,7 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
 }
 
 @media (max-width: 900px) {
-  .hero-with-image { padding-top: calc(var(--nav-h) + 1.5rem); text-align: center; }
+  .hero-with-image { padding-top: 1.5rem; text-align: center; }
   .hero-with-image-inner {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -574,7 +579,7 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
    ============================================= */
 .seminaires-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 2rem;
   margin-top: 2.5rem;
 }
@@ -673,7 +678,7 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
    ============================================= */
 .duo-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 2rem;
   margin-top: 2.5rem;
 }
@@ -741,7 +746,7 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
    ============================================= */
 .prestations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
   gap: 1.75rem;
   margin-top: 2.5rem;
 }
@@ -859,7 +864,7 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
 /* Formations, grille un peu plus dense */
 .formations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -1269,7 +1274,7 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
    ============================================= */
 @media (max-width: 560px) {
   .section { padding: 3rem 0; }
-  .hero { min-height: 80vh; padding-top: calc(var(--nav-h) + 2rem); }
+  .hero { min-height: calc(80vh - var(--nav-h)); padding-top: 2rem; }
   .modal-body { padding: 2rem 1.25rem 1.5rem; }
   .rdv-box { padding: 2rem 1.25rem; }
   .contact-form { padding: 1.5rem; }
