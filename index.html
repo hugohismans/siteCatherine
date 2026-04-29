@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Fée des Champs et la Fée d'Herbe, Séminaires & soins en Belgique</title>
+  <meta name="description" content="Catherine Faidherbe (Soleil de l'Une) et Dominique Deschamps (Ouvertures des M'Ondes) vous accompagnent à travers des séminaires en Belgique et en Brocéliande, ainsi que des soins individuels (massages, Reiki, EFT, constellations familiales)." />
+  <meta name="author" content="Catherine Faidherbe & Dominique Deschamps" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="La Fée des Champs et la Fée d'Herbe" />
+  <meta property="og:description" content="Séminaires de transformation et soins individuels, Catherine & Dominique." />
+  <meta property="og:locale" content="fr_BE" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-duo">
+
+  <!-- NAV -->
+  <header class="nav-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span>
+          <span class="nav-brand-script">La Fée d'Herbe & des Champs</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#presentation">Notre démarche</a></li>
+        <li><a href="#seminaires">Séminaires</a></li>
+        <li><a href="#duo-presentation">Nos univers</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="catherine.html" class="nav-btn">Catherine</a></li>
+        <li><a href="dominique.html" class="nav-btn">Dominique</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero hero-with-image" id="hero">
+    <div class="hero-with-image-inner">
+      <div class="hero-image-wrap fade-in">
+        <img data-key="hero.image" data-attr="src" alt="La Fée des Champs et la Fée d'Herbe" class="hero-image" />
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-key="hero.tagline"></p>
+        <h1 class="hero-title" data-key="hero.title_html" data-html></h1>
+        <p class="hero-subtitle" data-key="hero.subtitle"></p>
+        <div class="hero-cta">
+          <a href="#seminaires" class="btn btn-primary" data-key="hero.cta_primary"></a>
+          <a href="#contact" class="btn btn-ghost" data-key="hero.cta_secondary"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESENTATION DU DUO -->
+  <section class="section" id="presentation">
+    <div class="container-narrow">
+      <p class="section-eyebrow center" data-key="presentation.eyebrow"></p>
+      <h2 class="section-title center" data-key="presentation.title"></h2>
+      <p class="section-intro center" data-key="presentation.lead"></p>
+
+      <div data-key="presentation.paragraphs" data-list="p" class="presentation-text"></div>
+
+      <div class="mission-block fade-in">
+        <h3 data-key="presentation.objectifs_title"></h3>
+        <div data-key="presentation.objectifs_paragraphs" data-list="p"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SÉMINAIRES -->
+  <section class="section section-alt" id="seminaires">
+    <div class="container">
+      <p class="section-eyebrow center" data-key="seminaires.eyebrow"></p>
+      <h2 class="section-title center" data-key="seminaires.title"></h2>
+      <p class="section-intro center" data-key="seminaires.intro"></p>
+
+      <div class="seminaires-grid" id="seminaires-grid"></div>
+    </div>
+  </section>
+
+  <!-- DUO PRESENTATION (cartes Catherine/Dominique) -->
+  <section class="section" id="duo-presentation">
+    <div class="container">
+      <p class="section-eyebrow center" data-key="duo_presentation.eyebrow"></p>
+      <h2 class="section-title center" data-key="duo_presentation.title"></h2>
+      <p class="section-intro center" data-key="duo_presentation.intro"></p>
+
+      <div class="duo-cards" id="duo-cards"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-eyebrow" data-key="contact.eyebrow"></p>
+        <h2 class="section-title" data-key="contact.title"></h2>
+        <p data-key="contact.intro"></p>
+
+        <ul class="contact-details" id="contact-details"></ul>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form method="POST" class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Prénom &amp; Nom</label>
+              <input type="text" id="name" name="name" required placeholder="Jeanne Dupont" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="jeanne@exemple.be" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone <span class="optional">(optionnel)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="0400 00 00 00" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Objet</label>
+            <select id="subject" name="subject">
+              <option value="">Sélectionnez...</option>
+              <option value="seminaire-dohan">Séminaire Dohan (octobre 2026)</option>
+              <option value="seminaire-coxyde">Séminaire Saint Idesbald (janvier 2027)</option>
+              <option value="catherine">Question pour Catherine</option>
+              <option value="dominique">Question pour Dominique</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL (présent pour cohérence, pas utilisé sur l'accueil) -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Fermer">×</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">La Fée d'Herbe &amp; des Champs</p>
+      <p class="footer-tagline" data-key="footer.tagline"></p>
+      <nav class="footer-nav">
+        <a href="#presentation">Notre démarche</a>
+        <a href="#seminaires">Séminaires</a>
+        <a href="catherine.html">Soleil de l'Une</a>
+        <a href="dominique.html">Ouvertures des M'Ondes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy" data-key="footer.copyright"></p>
+    </div>
+  </footer>
+
+  <script>window.PAGE_KEY = 'duo';</script>
+  <script src="script.js"></script>
+</body>
+</html>

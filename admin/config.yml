@@ -1,0 +1,323 @@
+backend:
+  name: github
+  repo: hugohismans/siteCatherine
+  branch: main
+  # OAuth proxy, à remplacer par l'URL du Cloudflare Worker
+  base_url: https://sveltia-auth.PLACEHOLDER.workers.dev
+  auth_endpoint: oauth/authorize
+
+# Médias uploadés via le CMS
+media_folder: images
+public_folder: images
+
+# Commit direct sur main (pas de PR à valider)
+publish_mode: simple
+
+site_url: https://hugohismans.github.io/siteCatherine/
+display_url: https://hugohismans.github.io/siteCatherine/
+
+locale: fr
+
+collections:
+  - name: site
+    label: "Site"
+    files:
+      - name: content
+        label: "Contenu du site"
+        file: content.json
+        format: json
+        fields:
+
+          # ===========================================
+          # ACCUEIL DUO
+          # ===========================================
+          - name: duo
+            label: "🏠 Accueil, Duo"
+            widget: object
+            collapsed: true
+            fields:
+              - name: hero
+                label: "Bandeau d'accueil"
+                widget: object
+                fields:
+                  - { name: image,         label: "Image (médaillon des deux fées)", widget: image }
+                  - { name: image_alt,     label: "Description de l'image (accessibilité)", widget: string }
+                  - { name: tagline,       label: "Tagline (au-dessus du titre)", widget: string }
+                  - { name: title_html,    label: "Titre principal (HTML : <br />, <em>)", widget: string }
+                  - { name: subtitle,      label: "Sous-titre", widget: text }
+                  - { name: cta_primary,   label: "Bouton principal", widget: string }
+                  - { name: cta_secondary, label: "Bouton secondaire", widget: string }
+
+              - name: presentation
+                label: "Notre démarche / mission"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre", widget: string }
+                  - { name: lead,    label: "Phrase d'accroche", widget: string }
+                  - name: paragraphs
+                    label: "Paragraphes mission"
+                    widget: list
+                    field: { name: paragraph, label: "Paragraphe", widget: text }
+                  - { name: objectifs_title, label: "Titre objectifs", widget: string }
+                  - name: objectifs_paragraphs
+                    label: "Paragraphes objectifs"
+                    widget: list
+                    field: { name: paragraph, label: "Paragraphe", widget: text }
+
+              - name: seminaires
+                label: "Séminaires (cards)"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre de section", widget: string }
+                  - { name: intro,   label: "Phrase d'introduction", widget: text }
+                  - name: items
+                    label: "Liste des séminaires (publiés)"
+                    widget: list
+                    fields:
+                      - { name: id,           label: "Identifiant interne", widget: string, hint: "ex: dohan-2026" }
+                      - { name: lieu,         label: "Lieu", widget: string }
+                      - { name: titre,        label: "Titre du séminaire", widget: string }
+                      - { name: sous_titre,   label: "Sous-titre", widget: string, required: false }
+                      - { name: dates,        label: "Dates (texte libre)", widget: string }
+                      - { name: places,       label: "Nombre de places", widget: string }
+                      - name: programme
+                        label: "Programme (puces)"
+                        widget: list
+                        field: { name: item, label: "Élément", widget: string }
+                      - { name: calendly_url, label: "URL Calendly de réservation", widget: string }
+                      - { name: cta,          label: "Texte du bouton", widget: string, default: "Je réserve ma place" }
+
+              - name: duo_presentation
+                label: "Cartes Catherine / Dominique"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre", widget: string }
+                  - { name: intro,   label: "Phrase d'introduction", widget: text }
+                  - name: cards
+                    label: "Cartes (2 max)"
+                    widget: list
+                    fields:
+                      - { name: id,      label: "Identifiant", widget: string }
+                      - { name: nom,     label: "Nom complet", widget: string }
+                      - { name: marque,  label: "Nom de la marque", widget: string }
+                      - { name: tagline, label: "Phrase d'accroche", widget: string }
+                      - { name: image,   label: "Photo", widget: image }
+                      - { name: lien,    label: "Lien (catherine.html / dominique.html)", widget: string }
+
+              - name: contact
+                label: "Contact (accueil)"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre", widget: string }
+                  - { name: intro,   label: "Phrase d'intro", widget: text }
+                  - { name: email_catherine,         label: "Email Catherine", widget: string }
+                  - { name: email_dominique,         label: "Email Dominique", widget: string }
+                  - { name: phone_catherine_display, label: "Tél Catherine (affiché)", widget: string }
+                  - { name: phone_catherine_link,    label: "Tél Catherine (format +32...)", widget: string }
+                  - { name: phone_dominique_display, label: "Tél Dominique (affiché)", widget: string }
+                  - { name: phone_dominique_link,    label: "Tél Dominique (format +32...)", widget: string }
+                  - { name: formspree_id,            label: "Identifiant Formspree", widget: string }
+
+          # ===========================================
+          # CATHERINE, SOLEIL DE L'UNE
+          # ===========================================
+          - name: catherine
+            label: "🌞 Catherine, Soleil de l'Une"
+            widget: object
+            collapsed: true
+            fields:
+              - name: hero
+                label: "Bandeau d'accueil"
+                widget: object
+                fields:
+                  - { name: eyebrow,       label: "Petite ligne", widget: string }
+                  - { name: title_html,    label: "Titre principal (HTML)", widget: string }
+                  - { name: subtitle,      label: "Sous-titre", widget: text }
+                  - { name: cta_primary,   label: "Bouton principal", widget: string }
+                  - { name: cta_secondary, label: "Bouton secondaire", widget: string }
+
+              - name: presentation
+                label: "Présentation Catherine"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre", widget: string }
+                  - { name: photo,   label: "Photo", widget: image }
+                  - name: paragraphs
+                    label: "Paragraphes"
+                    widget: list
+                    field: { name: paragraph, label: "Paragraphe", widget: text }
+                  - { name: signature, label: "Phrase de signature (encadré)", widget: text }
+
+              - name: massages
+                label: "Mes massages"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre de section", widget: string }
+                  - { name: intro,   label: "Phrase d'intro", widget: text }
+                  - name: items
+                    label: "Liste des massages"
+                    widget: list
+                    fields:
+                      - { name: id,               label: "Identifiant interne", widget: string }
+                      - { name: image,            label: "Image (vignette + modal)", widget: image }
+                      - { name: title,            label: "Titre", widget: string }
+                      - { name: tarif,            label: "Tarif (ex: 30 €)", widget: string }
+                      - { name: description,      label: "Description courte (carte)", widget: text }
+                      - { name: long_description, label: "Description longue (modal)", widget: text }
+
+              - name: ateliers
+                label: "Mes ateliers"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre de section", widget: string }
+                  - { name: intro,   label: "Phrase d'intro", widget: text }
+                  - name: items
+                    label: "Liste des ateliers"
+                    widget: list
+                    fields:
+                      - { name: id,               label: "Identifiant interne", widget: string }
+                      - { name: image,            label: "Image / PDF de référence", widget: file, required: false }
+                      - { name: vignette_text,    label: "Texte affiché sur la vignette", widget: string }
+                      - { name: title,            label: "Titre", widget: string }
+                      - { name: duree,            label: "Durée (ex: 3 heures)", widget: string }
+                      - { name: tarif,            label: "Tarif", widget: string }
+                      - { name: description,      label: "Description courte (carte)", widget: text }
+                      - { name: long_description, label: "Description longue (modal)", widget: text }
+                      - { name: pdf_url,          label: "PDF téléchargeable (URL ou chemin)", widget: string, required: false }
+
+              - name: formations
+                label: "Mes formations"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre de section", widget: string }
+                  - { name: intro,   label: "Phrase d'intro (ce qui est fourni)", widget: text }
+                  - name: items
+                    label: "Liste des formations"
+                    widget: list
+                    fields:
+                      - { name: id,     label: "Identifiant interne", widget: string }
+                      - { name: image,  label: "Vignette", widget: image }
+                      - { name: title,  label: "Titre", widget: string }
+                      - { name: duree,  label: "Durée (ex: 1 journée)", widget: string }
+                      - { name: tarif,  label: "Tarif", widget: string }
+                      - { name: extras, label: "Précision (matériel inclus, etc.)", widget: string, required: false }
+
+              - name: rdv
+                label: "Réservation (Calendly)"
+                widget: object
+                fields:
+                  - { name: eyebrow,      label: "Petite ligne", widget: string }
+                  - { name: title,        label: "Titre", widget: string }
+                  - { name: intro,        label: "Phrase d'intro", widget: text }
+                  - { name: calendly_url, label: "URL Calendly", widget: string }
+                  - { name: cta,          label: "Texte du bouton", widget: string }
+
+              - name: contact
+                label: "Contact (Catherine)"
+                widget: object
+                fields:
+                  - { name: eyebrow,       label: "Petite ligne", widget: string }
+                  - { name: title,         label: "Titre", widget: string }
+                  - { name: intro,         label: "Phrase d'intro", widget: text }
+                  - { name: email,         label: "Email", widget: string }
+                  - { name: phone_display, label: "Tél (affiché)", widget: string }
+                  - { name: phone_link,    label: "Tél (format +32...)", widget: string }
+                  - { name: address,       label: "Adresse (sauter une ligne entre rue et code postal)", widget: text }
+                  - { name: formspree_id,  label: "Identifiant Formspree", widget: string }
+
+          # ===========================================
+          # DOMINIQUE, OUVERTURES DES M'ONDES
+          # ===========================================
+          - name: dominique
+            label: "🌿 Dominique, Ouvertures des M'Ondes"
+            widget: object
+            collapsed: true
+            fields:
+              - name: hero
+                label: "Bandeau d'accueil"
+                widget: object
+                fields:
+                  - { name: eyebrow,       label: "Petite ligne", widget: string }
+                  - { name: title_html,    label: "Titre principal (HTML)", widget: string }
+                  - { name: subtitle,      label: "Sous-titre", widget: text }
+                  - { name: cta_primary,   label: "Bouton principal", widget: string }
+                  - { name: cta_secondary, label: "Bouton secondaire", widget: string }
+
+              - name: presentation
+                label: "Présentation Dominique"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre", widget: string }
+                  - { name: photo,   label: "Photo", widget: image }
+                  - name: paragraphs
+                    label: "Paragraphes"
+                    widget: list
+                    field: { name: paragraph, label: "Paragraphe", widget: text }
+                  - { name: signature, label: "Phrase de signature (encadré)", widget: text }
+
+              - name: soins
+                label: "Mes soins"
+                widget: object
+                fields:
+                  - { name: eyebrow, label: "Petite ligne", widget: string }
+                  - { name: title,   label: "Titre", widget: string }
+                  - { name: intro,   label: "Phrase d'intro", widget: text }
+                  - name: items
+                    label: "Liste des soins"
+                    widget: list
+                    fields:
+                      - { name: id,               label: "Identifiant interne", widget: string }
+                      - { name: title,            label: "Titre", widget: string }
+                      - { name: sous_titre,       label: "Sous-titre", widget: string, required: false }
+                      - { name: duree,            label: "Durée", widget: string }
+                      - { name: tarif,            label: "Tarif", widget: string }
+                      - { name: description,      label: "Description courte (carte)", widget: text }
+                      - { name: long_description, label: "Description longue (modal)", widget: text }
+                      - name: indications
+                        label: "Indications (puces)"
+                        widget: list
+                        required: false
+                        field: { name: item, label: "Élément", widget: string }
+
+              - name: rdv
+                label: "Réservation (Calendly)"
+                widget: object
+                fields:
+                  - { name: eyebrow,      label: "Petite ligne", widget: string }
+                  - { name: title,        label: "Titre", widget: string }
+                  - { name: intro,        label: "Phrase d'intro", widget: text }
+                  - { name: calendly_url, label: "URL Calendly", widget: string }
+                  - { name: cta,          label: "Texte du bouton", widget: string }
+
+              - name: contact
+                label: "Contact (Dominique)"
+                widget: object
+                fields:
+                  - { name: eyebrow,       label: "Petite ligne", widget: string }
+                  - { name: title,         label: "Titre", widget: string }
+                  - { name: intro,         label: "Phrase d'intro", widget: text }
+                  - { name: email,         label: "Email", widget: string }
+                  - { name: phone_display, label: "Tél (affiché)", widget: string }
+                  - { name: phone_link,    label: "Tél (format +32...)", widget: string }
+                  - { name: address,       label: "Adresse", widget: text }
+                  - { name: formspree_id,  label: "Identifiant Formspree", widget: string }
+
+          # ===========================================
+          # FOOTER
+          # ===========================================
+          - name: footer
+            label: "📌 Pied de page (commun)"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: tagline,   label: "Tagline", widget: string }
+              - { name: copyright, label: "Mention copyright", widget: string }

@@ -1,0 +1,434 @@
+{
+  "duo": {
+    "hero": {
+      "image": "images/photo-duo.png",
+      "image_alt": "La Fée des Champs et la Fée d'Herbe",
+      "tagline": "Rêver · Guérir · Éclosion",
+      "title_html": "Un chemin vers<br /><em>l'alignement intérieur</em>",
+      "subtitle": "Catherine et Dominique vous accompagnent à travers des séminaires et des soins, dans un cadre bienveillant où chacun peut se reconnecter à soi.",
+      "cta_primary": "Découvrir nos séminaires",
+      "cta_secondary": "Nous contacter"
+    },
+    "presentation": {
+      "eyebrow": "Notre démarche",
+      "title": "Notre mission",
+      "lead": "Vous accompagner avec douceur, bienveillance et profondeur.",
+      "paragraphs": [
+        "Notre mission est d'accompagner les personnes vers un meilleur alignement intérieur en leur offrant des espaces de transformation, de conscience et de reconnexion à soi.",
+        "À travers différentes approches, constellations familiales, naturopathie, EFT, rituels de transformation, accords toltèques, nous proposons des outils permettant de mieux se comprendre, de libérer certains blocages et de retrouver un équilibre plus profond dans sa vie.",
+        "Nous souhaitons offrir un cadre bienveillant dans lequel chacun peut avancer à son rythme vers plus de clarté, de paix intérieure et d'authenticité."
+      ],
+      "objectifs_title": "Nos objectifs",
+      "objectifs_paragraphs": [
+        "Permettre à chacun de réveiller ses ressources et ses aptitudes parfois endormies par les conditionnements du monde qui nous entoure.",
+        "Aider les participants à reprendre pleinement leur pouvoir personnel et leur libre arbitre, afin qu'ils puissent faire des choix de vie plus conscients, alignés avec leurs valeurs profondes.",
+        "Inviter chacun à s'éveiller à qui il est réellement, à se libérer des influences limitantes et à avancer avec plus de paix, de lumière et de confiance dans son propre chemin."
+      ]
+    },
+    "seminaires": {
+      "eyebrow": "Nos séminaires",
+      "title": "Prenez un moment pour explorer nos prochains séminaires",
+      "intro": "Et si ce séminaire était le début d'un nouveau chapitre de votre vie ? Vous traversez une période de transition, vous ressentez le besoin de donner plus de sens à votre vie, ou vous souhaitez vous reconnecter à votre véritable nature.",
+      "items": [
+        {
+          "id": "dohan-2026",
+          "lieu": "Dohan, Belgique",
+          "titre": "Le Temps Retrouvé",
+          "sous_titre": "Se déposer, respirer, se reconnecter",
+          "dates": "21 au 25 octobre 2026",
+          "places": "6 places",
+          "programme": [
+            "Constellations",
+            "Méditations",
+            "Balades",
+            "Accords toltèques",
+            "Massage des mains",
+            "Sensibilisation à l'alimentation équilibrée",
+            "Atelier du rire"
+          ],
+          "calendly_url": "https://calendly.com/hugo-hismans/seminaire-dohan-octobre-2026",
+          "cta": "Je réserve ma place"
+        },
+        {
+          "id": "coxyde-2027",
+          "lieu": "Saint Idesbald, Belgique",
+          "titre": "Rayonner et recevoir en 2027",
+          "sous_titre": "S'ouvrir à la nouvelle année",
+          "dates": "13 au 17 janvier 2027",
+          "places": "6 places",
+          "programme": [
+            "Atelier d'abondance",
+            "Projection de la date de naissance",
+            "Ikigaï",
+            "Feng Shui",
+            "Balades",
+            "Méditations",
+            "EFT"
+          ],
+          "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
+          "cta": "Je réserve ma place"
+        }
+      ]
+    },
+    "duo_presentation": {
+      "eyebrow": "Découvrez nos univers",
+      "title": "Deux praticiennes, deux chemins",
+      "intro": "Au-delà de nos séminaires en duo, chacune accompagne individuellement à travers ses propres pratiques. Cliquez pour découvrir.",
+      "cards": [
+        {
+          "id": "catherine",
+          "nom": "Catherine Faidherbe",
+          "marque": "Soleil de l'Une",
+          "tagline": "Massages, ateliers & formations",
+          "image": "images/photo-catherine.png",
+          "lien": "catherine.html"
+        },
+        {
+          "id": "dominique",
+          "nom": "Dominique Deschamps",
+          "marque": "Ouvertures des M'Ondes",
+          "tagline": "Soins énergétiques, Reiki, constellations & EFT",
+          "image": "images/photo-dominique.png",
+          "lien": "dominique.html"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Une question ? Écrivez-nous",
+      "intro": "Pour toute information sur nos séminaires ou pour réserver votre place, n'hésitez pas à nous contacter.",
+      "email_catherine": "catherine@exemple.com",
+      "email_dominique": "dominique@exemple.com",
+      "phone_catherine_display": "0479 / 64.28.51",
+      "phone_catherine_link": "+32479642851",
+      "phone_dominique_display": "+32 4XX XX XX XX",
+      "phone_dominique_link": "+324XXXXXXXX",
+      "formspree_id": "PLACEHOLDER_ID"
+    }
+  },
+
+  "catherine": {
+    "hero": {
+      "eyebrow": "Soleil de l'Une",
+      "title_html": "Catherine<br /><em>Fée d'Herbe</em>",
+      "subtitle": "Massages bien-être, ateliers et formations professionnelles, pour faire rayonner l'harmonie et la magie discrète autour de soi.",
+      "cta_primary": "Prendre rendez-vous",
+      "cta_secondary": "Découvrir mes prestations"
+    },
+    "presentation": {
+      "eyebrow": "Présentation",
+      "title": "Une guérisseuse de l'âme",
+      "photo": "images/photo-catherine.png",
+      "paragraphs": [
+        "Je suis Catherine Faidherbe, connue sous le nom de la Fée d'Herbe. J'ai 56 ans, je suis mariée et maman de deux merveilleux enfants de 28 et 20 ans.",
+        "Depuis toujours, aider et transmettre sont les fils d'or de mon chemin. Après des études d'institutrice primaire, j'ai exercé ce métier avec passion pendant 22 ans, avant que la vie ne m'invite à une pause profonde, un burn-out de deux années. Dans l'ombre, j'ai découvert la kinésiologie : deux séances ont suffi pour raviver ma lumière intérieure, et c'est là que j'ai su que mon chemin serait désormais d'accompagner les autres vers le bien-être.",
+        "Ma route m'a menée vers les massages et la réflexologie plantaire. C'est lors de cette formation que j'ai rencontré Dominique, ma grande sœur d'âme. Ensemble, nous partageons aventures et rires, dans la complémentarité et l'harmonie tout comme le yin et le yang.",
+        "Au fil des années, j'ai poursuivi mon exploration du corps et de l'âme : bases de médecine chinoise, feng shui, lithothérapie, aromathérapie, fleurs de Bach et naturopathie. J'aime également le côté subtil de la vie : créer mes fioles, composer des mélanges inspirés de la nature et confectionner des bougies d'intention, lire les oracles, autant de rituels pour faire rayonner l'harmonie et la magie discrète autour de soi.",
+        "Depuis un an, je mets aussi mon énergie au service de ceux qui traversent la maladie, dans une maison de ressourcement pour des personnes atteintes du cancer. Certains disent de moi que je suis une guérisseuse de l'âme, et c'est un rôle qui nourrit profondément mon cœur."
+      ],
+      "signature": "Aujourd'hui, mon souhait est simple : vous accompagner avec douceur, bienveillance et magie, pour que chacun retrouve son équilibre, sa sérénité et la lumière de son âme."
+    },
+    "massages": {
+      "eyebrow": "Mes massages",
+      "title": "Des massages pour se déposer",
+      "intro": "Chaque massage est un moment de douceur, pensé pour libérer les tensions, apaiser le système nerveux et reconnecter à soi.",
+      "items": [
+        {
+          "id": "massage-mains",
+          "image": "images/massage-mains.jpg",
+          "title": "Massage des mains",
+          "tarif": "30 €",
+          "description": "Un soin doux et profondément apaisant qui agit à la fois sur le corps, le mental et les émotions. Riche en terminaisons nerveuses et en zones réflexes, la main est une porte d'entrée vers la détente globale.",
+          "long_description": "Par des gestes lents, enveloppants et précis, ce massage libère les tensions accumulées, calme le système nerveux et procure un profond sentiment de sécurité et de lâcher-prise. Accessible et réconfortant, il favorise le bien-être, la relaxation et la reconnexion à soi."
+        },
+        {
+          "id": "massage-assis-cranien",
+          "image": "images/massage-assis-cranien.jpg",
+          "title": "Massage assis / crânien",
+          "tarif": "40 €",
+          "description": "Un soin court et efficace, pratiqué habillé, qui agit sur le dos, les épaules, la nuque, les bras et la tête. Idéal pour libérer rapidement les tensions liées au stress et à la charge mentale.",
+          "long_description": "Par des pressions, des étirements doux et des manœuvres rythmées, ce massage apporte une détente immédiate, relance l'énergie, améliore la concentration et procure une sensation de légèreté et de recentrage, même en peu de temps."
+        },
+        {
+          "id": "massage-bol-kansu",
+          "image": "images/massage-bol-kansu.jpg",
+          "title": "Massage des pieds au bol Kansu",
+          "tarif": "50 €",
+          "description": "Un soin ancestral issu de la tradition ayurvédique, profondément harmonisant et rééquilibrant. Idéal pour réguler l'excès de feu intérieur (agitation, stress, colère).",
+          "long_description": "Grâce à l'alliance du bol Kansu et du ghee ou d'une huile végétale adaptée, ce massage apaise le système nerveux, libère les tensions émotionnelles et favorise un ancrage profond. C'est un soin enveloppant, rassurant, qui invite au lâcher-prise et à l'équilibre du corps et de l'esprit."
+        },
+        {
+          "id": "massage-dos",
+          "image": "images/massage-dos.jpg",
+          "title": "Massage du dos",
+          "tarif": "59 €",
+          "description": "Un soin profondément relaxant qui libère les tensions accumulées dans les épaules, la nuque et la colonne vertébrale, zones souvent chargées par le stress et les émotions.",
+          "long_description": "Par des gestes lents, enveloppants ou plus profonds selon les besoins, il apaise le système nerveux, relâche les muscles et favorise une meilleure circulation de l'énergie. Ce massage offre une sensation immédiate de détente, d'ancrage et de légèreté."
+        },
+        {
+          "id": "massage-harmonisant",
+          "image": "images/massage-harmonisant.jpg",
+          "title": "Massage harmonisant",
+          "tarif": "59 €",
+          "description": "Un soin enveloppant et profond qui vise à rééquilibrer le corps, apaiser l'esprit et fluidifier l'énergie. Un moment de reconnexion à soi.",
+          "long_description": "Par des gestes lents, continus et bienveillants, il libère les tensions accumulées, invite au lâcher-prise et restaure une sensation d'unité intérieure. Le corps retrouve sa douceur naturelle et l'âme son calme."
+        },
+        {
+          "id": "massage-prenatal",
+          "image": "images/massage-prenatal.jpg",
+          "title": "Massage prénatal",
+          "tarif": "59 €",
+          "description": "Le massage de la future maman est un soin enveloppant et sécurisant, spécialement adapté aux besoins du corps pendant la grossesse.",
+          "long_description": "Il soulage les tensions du dos, des jambes et du bassin, améliore la circulation et favorise une profonde détente physique et émotionnelle. Par des gestes lents, rassurants et respectueux du rythme de la grossesse, il offre à la future maman un espace de douceur, de recentrage et de connexion à elle-même et à son bébé."
+        },
+        {
+          "id": "massage-emotionnel",
+          "image": "images/massage-emotionnel.jpg",
+          "title": "Massage émotionnel",
+          "tarif": "70 €",
+          "description": "Un soin profondément apaisant qui agit au-delà du corps, en douceur, sur la sphère émotionnelle.",
+          "long_description": "À travers des gestes lents, enveloppants et conscients, il aide à relâcher les tensions liées au stress, aux émotions retenues et aux charges intérieures accumulées. Ce massage invite à un lâcher-prise profond, favorise l'écoute de soi et permet de retrouver un état de calme, de sécurité et d'harmonie intérieure."
+        },
+        {
+          "id": "massage-chamanique",
+          "image": "images/massage-chamanique.jpg",
+          "title": "Massage chamanique",
+          "tarif": "80 €",
+          "description": "Voyage au cœur de l'âme. Un rituel sacré, un voyage entre les mondes, là où le corps, le cœur et l'âme se rencontrent.",
+          "long_description": "Guidée par les esprits de la nature, la sagesse ancestrale du toucher et l'énergie subtile, je tisse un soin fait de gestes lents, enveloppants et intuitifs. Chaque mouvement libère ce qui pèse, apaise ce qui tremble, réveille la force intérieure oubliée. Le souffle s'apaise, l'énergie circule à nouveau, et le corps se souvient de sa capacité à s'auto-guérir. Une invitation à revenir à soi, à s'ancrer profondément dans la Terre tout en s'ouvrant à la lumière, dans un cocon de sécurité, de présence et de magie douce."
+        }
+      ]
+    },
+    "ateliers": {
+      "eyebrow": "Mes ateliers",
+      "title": "Des ateliers pour explorer",
+      "intro": "Trois ateliers thématiques, en petit comité, pour transmettre des outils simples et concrets à intégrer dans son quotidien.",
+      "items": [
+        {
+          "id": "atelier-feng-shui",
+          "image": "images/atelier-feng-shui.pdf",
+          "vignette_text": "Feng Shui",
+          "title": "Atelier Feng Shui",
+          "duree": "3 heures",
+          "tarif": "50 €",
+          "description": "Comprendre comment l'aménagement de votre intérieur influence votre bien-être, votre vitalité et la circulation de l'énergie dans votre quotidien.",
+          "long_description": "À partir du plan de votre maison ou appartement, vous apprendrez à analyser les différentes zones grâce aux principes du Feng Shui : circulation du Chi, lecture du bagua, correspondances entre les pièces et les domaines de vie. Chaque participante repartira avec des pistes concrètes d'aménagement.",
+          "pdf_url": "images/atelier-feng-shui.pdf"
+        },
+        {
+          "id": "atelier-spell-jars",
+          "image": "images/atelier-spell-jars.pdf",
+          "vignette_text": "Spell Jars",
+          "title": "Atelier Spell Jars",
+          "duree": "3 heures",
+          "tarif": "50 €",
+          "description": "Découvrez la symbolique des plantes, des épices et des éléments naturels utilisés dans ces rituels inspirés des traditions populaires.",
+          "long_description": "Vous formulerez une intention claire et créerez votre propre fiole personnalisée parmi cinq spell jars : protection énergétique, amour de soi, abondance et réussite, sommeil et apaisement, motivation et créativité. Vous repartirez avec votre fiole, un livret explicatif et les clés pour activer cet objet symbolique au quotidien.",
+          "pdf_url": "images/atelier-spell-jars.pdf"
+        },
+        {
+          "id": "atelier-petit-dejeuner",
+          "image": "images/atelier-petit-dejeuner.pdf",
+          "vignette_text": "Petit-déjeuner",
+          "title": "Petit-déjeuner santé",
+          "duree": "3 heures",
+          "tarif": "50 €",
+          "description": "Comment composer un petit-déjeuner salé, sans gluten, riche en protéines, vitamines et micronutriments, pour soutenir la dopamine, l'énergie et la concentration.",
+          "long_description": "À travers des explications simples, des échanges et des exemples pratiques, vous apprendrez à transformer votre premier repas en un véritable allié santé et vitalité.",
+          "pdf_url": "images/atelier-petit-dejeuner.pdf"
+        }
+      ]
+    },
+    "formations": {
+      "eyebrow": "Mes formations",
+      "title": "Formations professionnelles",
+      "intro": "Pour celles et ceux qui souhaitent transmettre à leur tour, ou intégrer ces gestes dans une pratique professionnelle. Sont fournis pour chaque formation : un syllabus en couleur, un flacon d'huile végétale, une fiole de purification, les boissons et collations, et un certificat.",
+      "items": [
+        {
+          "id": "formation-mains",
+          "image": "images/formation-mains.jpg",
+          "title": "Massage des mains",
+          "duree": "1 journée",
+          "tarif": "110 €"
+        },
+        {
+          "id": "formation-assis-cranien",
+          "image": "images/formation-assis-cranien.jpg",
+          "title": "Massage assis / crânien",
+          "duree": "1 journée",
+          "tarif": "110 €"
+        },
+        {
+          "id": "formation-bol-kansu",
+          "image": "images/formation-bol-kansu.jpg",
+          "title": "Massage des pieds au bol Kansu",
+          "duree": "1 journée",
+          "tarif": "120 €",
+          "extras": "+ bol Kansu et sel de gommage fournis"
+        },
+        {
+          "id": "formation-dos",
+          "image": "images/formation-dos.jpg",
+          "title": "Massage du dos",
+          "duree": "2 journées",
+          "tarif": "220 €"
+        },
+        {
+          "id": "formation-relaxant",
+          "image": "images/formation-relaxant.jpg",
+          "title": "Massage relaxant",
+          "duree": "2 journées",
+          "tarif": "220 €"
+        },
+        {
+          "id": "formation-prenatal",
+          "image": "images/formation-prenatal.jpg",
+          "title": "Massage de la future maman",
+          "duree": "2 journées",
+          "tarif": "220 €"
+        },
+        {
+          "id": "formation-emotionnel",
+          "image": "images/formation-emotionnel.jpg",
+          "title": "Massage émotionnel",
+          "duree": "2 journées",
+          "tarif": "220 €"
+        },
+        {
+          "id": "formation-reflexologie",
+          "image": "images/formation-reflexologie.jpg",
+          "title": "Réflexologie plantaire",
+          "duree": "6 journées",
+          "tarif": "660 € (payable en 3×)"
+        }
+      ]
+    },
+    "rdv": {
+      "eyebrow": "Réservation",
+      "title": "Réservez votre soin ou votre formation",
+      "intro": "Choisissez votre créneau directement en ligne, ou contactez-moi pour toute question.",
+      "calendly_url": "https://calendly.com/hugo-hismans/catherine-soleil-de-lune",
+      "cta": "Voir mes disponibilités"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Restons en lien",
+      "intro": "Une question, une demande spécifique ? Je vous réponds avec plaisir.",
+      "email": "catherine@exemple.com",
+      "phone_display": "0479 / 64.28.51",
+      "phone_link": "+32479642851",
+      "address": "Rue de l'Exemple 102\n1000 Bruxelles",
+      "formspree_id": "PLACEHOLDER_ID"
+    }
+  },
+
+  "dominique": {
+    "hero": {
+      "eyebrow": "Ouvertures des M'Ondes",
+      "title_html": "Dominique<br /><em>Fée des Champs</em>",
+      "subtitle": "Soins énergétiques, Reiki, constellations familiales et EFT, pour ouvrir un espace où ce qui pèse peut être reconnu, allégé et transformé.",
+      "cta_primary": "Prendre rendez-vous",
+      "cta_secondary": "Découvrir mes soins"
+    },
+    "presentation": {
+      "eyebrow": "Présentation",
+      "title": "Accompagner vers ses propres ressources",
+      "photo": "images/photo-dominique.png",
+      "paragraphs": [
+        "Je m'appelle Dominique Deschamps. J'ai été institutrice pendant trente-cinq années, un métier que j'ai exercé avec passion, guidée par l'envie d'accompagner les enfants sur le chemin de la découverte et de la confiance en eux.",
+        "Comme beaucoup de personnes, la vie m'a également confrontée à des épreuves profondes. Avec le recul, je vois aujourd'hui ces moments autrement. Je crois que certaines épreuves arrivent dans nos vies comme des cadeaux mystérieux : tant que le paquet reste fermé, il peut sembler lourd, injuste ou incompréhensible. Mais lorsque l'on trouve le courage de l'ouvrir, on découvre parfois une richesse intérieure que l'on ne soupçonnait pas.",
+        "C'est en acceptant de regarder ces passages difficiles autrement que j'ai découvert les soins énergétiques, et en particulier le Reiki. J'ai eu la chance de rencontrer un maître Reiki exceptionnel, qui m'a guidée avec bienveillance et m'a ouvert la porte d'une autre manière de comprendre la vie.",
+        "Depuis maintenant plus de dix-sept ans, j'explore et pratique les soins énergétiques avec passion. Au fil du temps, mon chemin s'est enrichi de nombreuses approches complémentaires : EFT (incluant l'Ho'oponopono et différentes techniques de libération émotionnelle), réflexologie plantaire (où j'ai rencontré Catherine, devenue une amie précieuse), constellations familiales selon Bert Hellinger, et approches symboliques et chamaniques inspirées notamment du travail d'Alejandro Jodorowsky."
+      ],
+      "signature": "Aujourd'hui, je propose des soins énergétiques et des séminaires, dans un esprit simple et respectueux. Mon intention n'est pas de « guérir » à la place des autres, mais d'accompagner chacun à retrouver ses propres ressources intérieures."
+    },
+    "soins": {
+      "eyebrow": "Mes soins",
+      "title": "Des espaces pour s'alléger",
+      "intro": "Chaque soin ouvre un espace où ce qui pèse peut être reconnu et transformé. Vous restez pleinement acteur·rice de votre chemin.",
+      "items": [
+        {
+          "id": "massage-metamorphique",
+          "title": "Massage métamorphique",
+          "sous_titre": "Libération en douceur",
+          "duree": "1 h",
+          "tarif": "55 €",
+          "description": "Un massage très doux des pieds, des mains et de la tête, centré sur la zone réflexe de la colonne vertébrale, où se logent les mémoires de notre histoire (notamment prénatale et transgénérationnelle).",
+          "long_description": "Il agit comme une alchimie subtile, en invitant ton énergie à se remettre en mouvement, sans forcer, sans intention de « guérir », simplement en laissant la vie circuler librement à nouveau. Tu restes habillé·e, confortablement installé·e, et tu n'as rien à faire… juste recevoir.",
+          "indications": [
+            "En période de transformation, de fatigue profonde ou de stagnation",
+            "Si tu ressens un besoin de changement sans savoir par où commencer",
+            "Pour te reconnecter à ton rythme intérieur"
+          ]
+        },
+        {
+          "id": "soin-reiki",
+          "title": "Soin Reiki",
+          "sous_titre": "Bienvenue dans l'univers du soin Reiki",
+          "duree": "1 h 30",
+          "tarif": "70 €",
+          "description": "Un temps de dialogue pour poser ce que tu vis, puis l'imposition des mains comme passage entre les mondes subtils. Je ne fais pas, je laisse passer.",
+          "long_description": "Nous commençons par un temps de dialogue qui permet de poser des mots sur ce que tu vis, ce que tu ressens, ce que tu veux transformer ou renforcer. On identifie ensemble une intention claire pour orienter le soin. Par l'imposition des mains, je deviens un passage : un canal ouvert, relié aux mondes subtils. Dans ce silence vibrant, les énergies lumineuses s'approchent, elles ne forcent rien, elles accompagnent. Dans cet espace sacré, quelque chose se réaligne, se libère, se réveille."
+        },
+        {
+          "id": "constellation-rer",
+          "title": "Constellation familiale individuelle, méthode RER",
+          "sous_titre": "Ressentir – Énergies – Réparer",
+          "duree": "1 h 30",
+          "tarif": "70 €",
+          "description": "Une approche de constellation centrée sur le ressenti du corps. Le corps ressent ce que l'histoire n'a jamais pu dire.",
+          "long_description": "Après un temps d'échange pour clarifier la problématique, tu t'allonges confortablement sur la table et entres dans un état de relaxation guidée. À partir des sensations corporelles, des émotions et des intuitions, les personnes du système sont invitées une à une dans l'espace intérieur de la constellation. Cette exploration permet de ressentir, comprendre et transformer certaines empreintes émotionnelles profondes, dans un cadre doux et sécurisant."
+        },
+        {
+          "id": "constellation-figurines",
+          "title": "Constellation familiale individuelle, figurines & objets",
+          "sous_titre": "Mettre en lumière l'invisible",
+          "duree": "1 h 30",
+          "tarif": "70 €",
+          "description": "À l'aide de figurines ou d'objets symboliques, les membres du système sont représentés pour rendre visibles les dynamiques invisibles.",
+          "long_description": "Cette approche offre un espace plus intime pour explorer une problématique personnelle ou familiale. Elle permet de prendre le temps d'observer, de ressentir et d'intégrer les émotions avec douceur, dans un cadre confidentiel et sécurisé. Particulièrement adaptée aux personnes qui souhaitent avancer à leur rythme."
+        },
+        {
+          "id": "constellation-collective",
+          "title": "Constellation collective",
+          "sous_titre": "La méthode en groupe",
+          "duree": "Sur inscription",
+          "tarif": "80 € constellé·e · 40 € représentant·e",
+          "description": "Les constellations familiales en groupe permettent de mettre en lumière les dynamiques invisibles qui influencent notre vie.",
+          "long_description": "Grâce aux participants qui représentent les membres du système, les relations et les émotions prennent forme et révèlent ce qui agit en profondeur dans l'histoire familiale. Ce travail permet de comprendre des schémas répétitifs, apaiser des conflits, retrouver sa juste place dans son système et ouvrir un nouvel élan dans sa vie. Chaque personne a une place juste dans son système. La retrouver change tout."
+        },
+        {
+          "id": "eft",
+          "title": "EFT, Emotional Freedom Techniques",
+          "sous_titre": "Clarté · Apaisement · Libération",
+          "duree": "1 h 30",
+          "tarif": "70 €",
+          "description": "Une méthode douce et puissante de libération émotionnelle qui combine la verbalisation consciente et le tapping sur certains points d'acupuncture.",
+          "long_description": "Ce soin apaise les émotions intenses, déprogramme les schémas limitants et restaure la sécurité intérieure. Il est particulièrement bénéfique en cas de peurs, stress, anxiété, blocages émotionnels ou relationnels récurrents, ou difficulté à faire un choix. La séance est interactive et guidée en douceur, tu es pleinement acteur·rice de ta libération."
+        }
+      ]
+    },
+    "rdv": {
+      "eyebrow": "Réservation",
+      "title": "Réservez votre soin",
+      "intro": "Choisissez votre créneau en ligne, ou contactez-moi pour toute question.",
+      "calendly_url": "https://calendly.com/hugo-hismans/dominique-ouvertures-des-mondes",
+      "cta": "Voir mes disponibilités"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Écrivez-moi",
+      "intro": "Pour toute question sur mes soins ou pour échanger en amont d'une séance, je vous réponds avec attention.",
+      "email": "dominique@exemple.com",
+      "phone_display": "+32 4XX XX XX XX",
+      "phone_link": "+324XXXXXXXX",
+      "address": "Rue de l'Exemple 102\n1000 Bruxelles",
+      "formspree_id": "PLACEHOLDER_ID"
+    }
+  },
+
+  "footer": {
+    "tagline": "La Fée des Champs et la Fée d'Herbe, accompagner vers l'alignement intérieur",
+    "copyright": "© 2026 Catherine Faidherbe & Dominique Deschamps. Tous droits réservés."
+  }
+}
