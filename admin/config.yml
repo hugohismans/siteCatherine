@@ -276,6 +276,7 @@ collections:
                     widget: list
                     fields:
                       - { name: id,               label: "Identifiant interne", widget: string }
+                      - { name: image,            label: "Image (optionnelle, fallback cursive si vide)", widget: image, required: false }
                       - { name: title,            label: "Titre", widget: string }
                       - { name: sous_titre,       label: "Sous-titre", widget: string, required: false }
                       - { name: duree,            label: "Durée", widget: string }

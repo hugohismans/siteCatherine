@@ -159,11 +159,13 @@ function renderPrestations(section, gridId) {
 function renderSoins(section, gridId) {
   const grid = document.getElementById(gridId);
   if (!grid) return;
-  grid.innerHTML = section.items.map(item => `
+  grid.innerHTML = section.items.map(item => {
+    const visual = item.image
+      ? `<img src="${escapeAttr(item.image)}" alt="${escapeAttr(item.title)}" class="prestation-card-image is-photo" loading="lazy" />`
+      : `<div class="prestation-card-image is-cursive"><span>${escapeHtml(item.title.split(',')[0])}</span></div>`;
+    return `
     <article class="prestation-card fade-in" data-modal="${escapeAttr(item.id)}">
-      <div class="prestation-card-image" style="background: linear-gradient(135deg, var(--clr-accent-soft), var(--clr-bg-alt)); display:flex; align-items:center; justify-content:center; padding:1.5rem; text-align:center;">
-        <span style="font-family: var(--ff-script); color: var(--clr-accent-dark); font-size: 2.2rem; line-height: 1.1;">${escapeHtml(item.title.split(',')[0])}</span>
-      </div>
+      ${visual}
       <div class="prestation-card-body">
         <div class="prestation-card-header">
           <h3>${escapeHtml(item.title)}</h3>
@@ -175,7 +177,8 @@ function renderSoins(section, gridId) {
         <span class="prestation-card-more">En savoir plus →</span>
       </div>
     </article>
-  `).join('');
+    `;
+  }).join('');
 }
 
 function renderAteliers(section, gridId) {
@@ -233,6 +236,7 @@ function setupModals(byId) {
     if (!item) return;
     modalBody.innerHTML = renderModalContent(item);
     modalBox?.classList.remove('is-image-only');
+    modalBox?.classList.toggle('has-image', !!(item.image && /\.(jpg|jpeg|png|webp)$/i.test(item.image)));
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
   });

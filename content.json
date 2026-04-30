@@ -3,7 +3,7 @@
     "hero": {
       "image": "images/photo-duo.png",
       "image_alt": "La Fée des Champs et la Fée d'Herbe",
-      "tagline": "Rêver · Guérir · Éclosion",
+      "tagline": "rêver - guérir - éclore",
       "title_html": "Un chemin vers<br /><em>l'alignement intérieur</em>",
       "subtitle": "Catherine et Dominique vous accompagnent à travers des séminaires et des soins, dans un cadre bienveillant où chacun peut se reconnecter à soi.",
       "cta_primary": "Découvrir nos séminaires",
@@ -349,6 +349,7 @@
       "items": [
         {
           "id": "massage-metamorphique",
+          "image": "images/soin-massage.png",
           "title": "Massage métamorphique",
           "sous_titre": "Libération en douceur",
           "duree": "1 h",
@@ -363,6 +364,7 @@
         },
         {
           "id": "soin-reiki",
+          "image": "images/soin-reiki.png",
           "title": "Soin Reiki",
           "sous_titre": "Bienvenue dans l'univers du soin Reiki",
           "duree": "1 h 30",
@@ -372,6 +374,7 @@
         },
         {
           "id": "constellation-rer",
+          "image": "images/soin-constelation.png",
           "title": "Constellation familiale individuelle, méthode RER",
           "sous_titre": "Ressentir – Énergies – Réparer",
           "duree": "1 h 30",
@@ -381,6 +384,7 @@
         },
         {
           "id": "constellation-figurines",
+          "image": "images/soin-constelation2.png",
           "title": "Constellation familiale individuelle, figurines & objets",
           "sous_titre": "Mettre en lumière l'invisible",
           "duree": "1 h 30",
@@ -390,6 +394,7 @@
         },
         {
           "id": "constellation-collective",
+          "image": "images/soin-constelation-3.png",
           "title": "Constellation collective",
           "sous_titre": "La méthode en groupe",
           "duree": "Sur inscription",
@@ -399,6 +404,7 @@
         },
         {
           "id": "eft",
+          "image": "images/soin-eft.png",
           "title": "EFT, Emotional Freedom Techniques",
           "sous_titre": "Clarté · Apaisement · Libération",
           "duree": "1 h 30",
