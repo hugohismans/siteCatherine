@@ -97,12 +97,12 @@
       "eyebrow": "Contact",
       "title": "Une question ? Écrivez-nous",
       "intro": "Pour toute information sur nos séminaires ou pour réserver votre place, n'hésitez pas à nous contacter.",
-      "email_catherine": "catherine@exemple.com",
-      "email_dominique": "dominique@exemple.com",
-      "phone_catherine_display": "0479 / 64.28.51",
+      "email_catherine": "centresoleildelune@gmail.com",
+      "email_dominique": "dominique-deschamps@hotmail.fr",
+      "phone_catherine_display": "0479 64 28 51",
       "phone_catherine_link": "+32479642851",
-      "phone_dominique_display": "+32 4XX XX XX XX",
-      "phone_dominique_link": "+324XXXXXXXX",
+      "phone_dominique_display": "0486 22 75 79",
+      "phone_dominique_link": "+32486227579",
       "formspree_id": "PLACEHOLDER_ID"
     }
   },
@@ -314,10 +314,10 @@
       "eyebrow": "Contact",
       "title": "Restons en lien",
       "intro": "Une question, une demande spécifique ? Je vous réponds avec plaisir.",
-      "email": "catherine@exemple.com",
-      "phone_display": "0479 / 64.28.51",
+      "email": "centresoleildelune@gmail.com",
+      "phone_display": "0479 64 28 51",
       "phone_link": "+32479642851",
-      "address": "Rue de l'Exemple 102\n1000 Bruxelles",
+      "address": "34, rue Léon Figue\n7300 Boussu",
       "formspree_id": "PLACEHOLDER_ID"
     }
   },
@@ -425,10 +425,10 @@
       "eyebrow": "Contact",
       "title": "Écrivez-moi",
       "intro": "Pour toute question sur mes soins ou pour échanger en amont d'une séance, je vous réponds avec attention.",
-      "email": "dominique@exemple.com",
-      "phone_display": "+32 4XX XX XX XX",
-      "phone_link": "+324XXXXXXXX",
-      "address": "Rue de l'Exemple 102\n1000 Bruxelles",
+      "email": "dominique-deschamps@hotmail.fr",
+      "phone_display": "0486 22 75 79",
+      "phone_link": "+32486227579",
+      "address": "11, rue Ferrer\n7331 Baudour",
       "formspree_id": "PLACEHOLDER_ID"
     }
   },
