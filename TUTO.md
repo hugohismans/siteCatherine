@@ -156,4 +156,4 @@ Pour qu'elles aient une trace :
 
 - [ ] Push final si modifs en live
 - [ ] Envoyer un email récap avec les liens utiles + rappel du fonctionnement
-- [ ] Facturation acompte (100 €) si pas déjà fait
+

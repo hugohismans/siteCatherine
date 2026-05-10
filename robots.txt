@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /sveltia-cms-auth/
+
+Sitemap: https://hugohismans.github.io/siteCatherine/sitemap.xml
