@@ -1,0 +1,10 @@
+# Worker OAuth proxy cloné en local pour déploiement Cloudflare,
+# pas du code du site
+/sveltia-cms-auth/
+
+# OS / éditeur
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

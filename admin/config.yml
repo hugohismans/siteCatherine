@@ -2,9 +2,8 @@ backend:
   name: github
   repo: hugohismans/siteCatherine
   branch: main
-  # OAuth proxy, à remplacer par l'URL du Cloudflare Worker
-  base_url: https://sveltia-auth.PLACEHOLDER.workers.dev
-  auth_endpoint: oauth/authorize
+  base_url: https://sveltia-cms-auth.hugo-hismans.workers.dev
+  auth_endpoint: auth
 
 # Médias uploadés via le CMS
 media_folder: images
