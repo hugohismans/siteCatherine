@@ -120,7 +120,7 @@ collections:
                   - { name: phone_catherine_link,    label: "Tél Catherine (format +32...)", widget: string }
                   - { name: phone_dominique_display, label: "Tél Dominique (affiché)", widget: string }
                   - { name: phone_dominique_link,    label: "Tél Dominique (format +32...)", widget: string }
-                  - { name: formspree_id,            label: "Identifiant Formspree", widget: string }
+                  - { name: formspree_id,            label: "Identifiants Formspree (plusieurs séparés par virgule pour notifier les deux)", widget: string, hint: "ex: mykolnpn,mbdwqzkl" }
 
           # ===========================================
           # CATHERINE, SOLEIL DE L'UNE

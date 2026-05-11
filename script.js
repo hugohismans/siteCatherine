@@ -349,18 +349,58 @@ function renderSoloContact(contact) {
 // =============================================
 // Contact form (Formspree)
 // =============================================
+// `formspree_id` accepte une liste séparée par virgules pour envoyer
+// le même message à plusieurs endpoints (ex : page d'accueil duo qui
+// notifie Catherine ET Dominique).
 function setupContactForm(contact) {
   const form = document.getElementById('contact-form');
   if (!form || !contact) return;
-  const id = contact.formspree_id;
-  if (id && id !== 'PLACEHOLDER_ID') {
-    form.action = `https://formspree.io/f/${id}`;
+  const raw = contact.formspree_id;
+  if (!raw || raw === 'PLACEHOLDER_ID') return;
+
+  const ids = raw.split(',').map(s => s.trim()).filter(Boolean);
+  if (ids.length === 0) return;
+
+  if (ids.length === 1) {
+    // Cas simple : action native du form, comportement Formspree par défaut
+    form.action = `https://formspree.io/f/${ids[0]}`;
+    return;
   }
-  form.addEventListener('submit', () => {
-    if (!id || id === 'PLACEHOLDER_ID') {
-      // Mode démo : empêcher l'envoi
-      // (formulaire en attente de configuration Formspree)
+
+  // Multi-destinataires : on intercepte le submit et on POST en parallèle
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Envoi en cours…';
+
+    try {
+      const results = await Promise.all(
+        ids.map(id => fetch(`https://formspree.io/f/${id}`, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        }))
+      );
+      if (results.every(r => r.ok)) {
+        form.reset();
+        submitBtn.textContent = '✓ Message envoyé';
+      } else {
+        submitBtn.textContent = 'Erreur, réessayer';
+        submitBtn.disabled = false;
+      }
+    } catch (err) {
+      console.error('Erreur Formspree:', err);
+      submitBtn.textContent = 'Erreur, réessayer';
+      submitBtn.disabled = false;
     }
+
+    setTimeout(() => {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }, 4000);
   });
 }
 
