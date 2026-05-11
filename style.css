@@ -794,6 +794,14 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
 .seminaire-meta-item { display: flex; align-items: center; gap: 0.4rem; }
 .seminaire-meta-icon { color: var(--clr-accent); font-size: 1.05rem; }
 
+.seminaire-meta-item.is-prix {
+  background: var(--clr-accent-soft);
+  color: var(--clr-accent-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
 .seminaire-programme-title {
   font-size: 0.78rem;
   font-weight: 700;

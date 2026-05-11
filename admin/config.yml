@@ -81,6 +81,7 @@ collections:
                       - { name: sous_titre,   label: "Sous-titre", widget: string, required: false }
                       - { name: dates,        label: "Dates (texte libre)", widget: string }
                       - { name: places,       label: "Nombre de places", widget: string }
+                      - { name: prix,         label: "Prix (ex: 1100 €)", widget: string, required: false }
                       - name: programme
                         label: "Programme (puces)"
                         widget: list

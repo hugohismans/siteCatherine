@@ -107,6 +107,7 @@ function renderSeminaires(seminaires) {
       <div class="seminaire-meta">
         <span class="seminaire-meta-item"><span class="seminaire-meta-icon">📅</span>${escapeHtml(s.dates)}</span>
         <span class="seminaire-meta-item"><span class="seminaire-meta-icon">👥</span>${escapeHtml(s.places)}</span>
+        ${s.prix ? `<span class="seminaire-meta-item is-prix"><span class="seminaire-meta-icon">💶</span>${escapeHtml(s.prix)}</span>` : ''}
       </div>
       <p class="seminaire-programme-title">Au programme</p>
       <ul class="seminaire-programme">
