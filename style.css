@@ -1010,16 +1010,9 @@ body.theme-dominique .nav-header { background: rgba(241, 240, 231, 0.92); }
   align-self: flex-start;
 }
 
-/* Cards atelier (vignette texte au lieu d'image) */
-.prestation-card.is-atelier .prestation-card-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-script);
-  color: var(--clr-accent-dark);
+/* Cards atelier en mode vignette texte (fallback si pas d'image uploadée) */
+.prestation-card.is-atelier .prestation-card-image.is-cursive {
   font-size: 2.4rem;
-  background: linear-gradient(135deg, var(--clr-accent-soft), var(--clr-bg-alt));
-  text-align: center;
   padding: 2rem;
 }
 

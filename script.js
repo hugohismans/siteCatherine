@@ -66,10 +66,18 @@ function indexById(items) {
   return Object.fromEntries(items.map(i => [i.id, i]));
 }
 
+// Sveltia CMS écrit parfois les chemins d'image en absolu (ex: "/images/foo.png"),
+// ce qui casse sur GitHub Pages déployé sur un sous-chemin (/siteCatherine/).
+// On normalise en chemin relatif.
+function normalizePath(p) {
+  if (!p) return p;
+  return p.replace(/^\/+/, '');
+}
+
 function hydrateDataKeys(data) {
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.dataset.key;
-    const value = getPath(data, key);
+    let value = getPath(data, key);
     if (value == null) return;
 
     const attr = el.dataset.attr;
@@ -77,7 +85,12 @@ function hydrateDataKeys(data) {
     const list = el.dataset.list;
     const prefix = el.dataset.prefix || '';
 
-    if (attr) { el.setAttribute(attr, value); return; }
+    if (attr) {
+      // Normalise les chemins d'image pour qu'ils restent relatifs au sous-chemin du site
+      if (attr === 'src' && typeof value === 'string') value = normalizePath(value);
+      el.setAttribute(attr, value);
+      return;
+    }
     if (list && Array.isArray(value)) {
       el.innerHTML = '';
       value.forEach(item => {
@@ -124,7 +137,7 @@ function renderDuoCards(duoPresentation) {
   wrap.innerHTML = duoPresentation.cards.map(c => `
     <a href="${escapeAttr(c.lien)}" class="duo-card fade-in">
       <div class="duo-card-image-wrap">
-        <img src="${escapeAttr(c.image)}" alt="${escapeAttr(c.nom)}" class="duo-card-image" loading="lazy" />
+        <img src="${escapeAttr(normalizePath(c.image))}" alt="${escapeAttr(c.nom)}" class="duo-card-image" loading="lazy" />
       </div>
       <div class="duo-card-body">
         <p class="duo-card-marque">${escapeHtml(c.marque)}</p>
@@ -144,7 +157,7 @@ function renderPrestations(section, gridId) {
   if (!grid) return;
   grid.innerHTML = section.items.map(item => `
     <article class="prestation-card fade-in" data-modal="${escapeAttr(item.id)}">
-      <img src="${escapeAttr(item.image)}" alt="${escapeAttr(item.title)}" class="prestation-card-image" loading="lazy" />
+      <img src="${escapeAttr(normalizePath(item.image))}" alt="${escapeAttr(item.title)}" class="prestation-card-image" loading="lazy" />
       <div class="prestation-card-body">
         <div class="prestation-card-header">
           <h3>${escapeHtml(item.title)}</h3>
@@ -162,7 +175,7 @@ function renderSoins(section, gridId) {
   if (!grid) return;
   grid.innerHTML = section.items.map(item => {
     const visual = item.image
-      ? `<img src="${escapeAttr(item.image)}" alt="${escapeAttr(item.title)}" class="prestation-card-image is-photo" loading="lazy" />`
+      ? `<img src="${escapeAttr(normalizePath(item.image))}" alt="${escapeAttr(item.title)}" class="prestation-card-image is-photo" loading="lazy" />`
       : `<div class="prestation-card-image is-cursive"><span>${escapeHtml(item.title.split(',')[0])}</span></div>`;
     return `
     <article class="prestation-card fade-in" data-modal="${escapeAttr(item.id)}">
@@ -185,9 +198,14 @@ function renderSoins(section, gridId) {
 function renderAteliers(section, gridId) {
   const grid = document.getElementById(gridId);
   if (!grid) return;
-  grid.innerHTML = section.items.map(item => `
+  grid.innerHTML = section.items.map(item => {
+    const isImage = item.image && /\.(jpg|jpeg|png|webp)$/i.test(item.image);
+    const visual = isImage
+      ? `<img src="${escapeAttr(normalizePath(item.image))}" alt="${escapeAttr(item.title)}" class="prestation-card-image is-photo" loading="lazy" />`
+      : `<div class="prestation-card-image is-cursive"><span>${escapeHtml(item.vignette_text || item.title)}</span></div>`;
+    return `
     <article class="prestation-card is-atelier fade-in" data-modal="${escapeAttr(item.id)}">
-      <div class="prestation-card-image">${escapeHtml(item.vignette_text || item.title)}</div>
+      ${visual}
       <div class="prestation-card-body">
         <div class="prestation-card-header">
           <h3>${escapeHtml(item.title)}</h3>
@@ -198,15 +216,16 @@ function renderAteliers(section, gridId) {
         <span class="prestation-card-more">En savoir plus →</span>
       </div>
     </article>
-  `).join('');
+    `;
+  }).join('');
 }
 
 function renderFormations(section, gridId) {
   const grid = document.getElementById(gridId);
   if (!grid) return;
   grid.innerHTML = section.items.map(item => `
-    <article class="formation-card fade-in" data-image-modal="${escapeAttr(item.image)}" data-image-alt="${escapeAttr(item.title)}" tabindex="0" role="button" aria-label="Voir le détail : ${escapeAttr(item.title)}">
-      <img src="${escapeAttr(item.image)}" alt="${escapeAttr(item.title)}" class="formation-card-image" loading="lazy" />
+    <article class="formation-card fade-in" data-image-modal="${escapeAttr(normalizePath(item.image))}" data-image-alt="${escapeAttr(item.title)}" tabindex="0" role="button" aria-label="Voir le détail : ${escapeAttr(item.title)}">
+      <img src="${escapeAttr(normalizePath(item.image))}" alt="${escapeAttr(item.title)}" class="formation-card-image" loading="lazy" />
       <div class="formation-card-body">
         <h3>${escapeHtml(item.title)}</h3>
         <div class="formation-card-meta">
@@ -287,9 +306,9 @@ function setupImageModal() {
 
 function renderModalContent(item) {
   const parts = [];
-  // Image principale (jpg) ou pas (atelier/soin)
+  // Image principale (jpg/png) ou pas (atelier sans image, fallback cursive)
   if (item.image && /\.(jpg|jpeg|png|webp)$/i.test(item.image)) {
-    parts.push(`<img src="${escapeAttr(item.image)}" alt="${escapeAttr(item.title)}" class="modal-image" />`);
+    parts.push(`<img src="${escapeAttr(normalizePath(item.image))}" alt="${escapeAttr(item.title)}" class="modal-image" />`);
   }
   parts.push(`<h2>${escapeHtml(item.title)}</h2>`);
   if (item.sous_titre) parts.push(`<p class="modal-subtitle">${escapeHtml(item.sous_titre)}</p>`);
@@ -312,7 +331,7 @@ function renderModalContent(item) {
   parts.push(`<div class="modal-actions">`);
   parts.push(`<a href="#rdv" class="btn btn-primary modal-link">Réserver →</a>`);
   if (item.pdf_url) {
-    parts.push(`<a href="${escapeAttr(item.pdf_url)}" target="_blank" rel="noopener" class="btn btn-outline">Télécharger la fiche PDF</a>`);
+    parts.push(`<a href="${escapeAttr(normalizePath(item.pdf_url))}" target="_blank" rel="noopener" class="btn btn-outline">Télécharger la fiche PDF</a>`);
   }
   parts.push(`</div>`);
 

@@ -224,7 +224,7 @@
       "items": [
         {
           "id": "atelier-feng-shui",
-          "image": "/images/Feng.png",
+          "image": "images/Feng.png",
           "vignette_text": "Feng Shui",
           "title": "Atelier Feng Shui",
           "duree": "3 heures",
@@ -235,7 +235,7 @@
         },
         {
           "id": "atelier-spell-jars",
-          "image": "/images/spelljar.png",
+          "image": "images/spelljar.png",
           "vignette_text": "Spell Jars",
           "title": "Atelier Spell Jars",
           "duree": "3 heures",
@@ -246,7 +246,7 @@
         },
         {
           "id": "atelier-petit-dejeuner",
-          "image": "/images/petitd.png",
+          "image": "images/petitd.png",
           "vignette_text": "Petit-déjeuner",
           "title": "Petit-déjeuner santé",
           "duree": "3 heures",
