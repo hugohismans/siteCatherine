@@ -67,6 +67,22 @@
           ],
           "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
           "cta": "Je réserve ma place"
+        },
+        {
+          "id": "brocéliande-2026",
+          "lieu": "Lieu-dit Les Bouyères, Saint-Malon-sur-Mel, France",
+          "titre": "Séjour immersif d'éveil intérieur et de reconnexion à soi",
+          "sous_titre": "Explorer vos ressources intérieures",
+          "dates": "12 au 17 Juin 2026",
+          "places": "6 Places",
+          "programme": [
+            "Constellations familiales",
+            "Méditations",
+            "Sensibilisation à l'alimentation saine et équilibrée",
+            "Sorties en forêt"
+          ],
+          "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
+          "cta": "Je réserve ma place"
         }
       ]
     },
