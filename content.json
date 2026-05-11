@@ -106,7 +106,6 @@
       "formspree_id": "PLACEHOLDER_ID"
     }
   },
-
   "catherine": {
     "hero": {
       "eyebrow": "Soleil de l'Une",
@@ -321,7 +320,6 @@
       "formspree_id": "PLACEHOLDER_ID"
     }
   },
-
   "dominique": {
     "hero": {
       "eyebrow": "Ouvertures des M'Ondes",
@@ -335,7 +333,7 @@
       "title": "Accompagner vers ses propres ressources",
       "photo": "images/photo-dominique.png",
       "paragraphs": [
-        "Je m'appelle Dominique Deschamps. J'ai été institutrice pendant trente-cinq années, un métier que j'ai exercé avec passion, guidée par l'envie d'accompagner les enfants sur le chemin de la découverte et de la confiance en eux.",
+        "Je m'appelle Dominique Deschamps. J'ai été institutrice pendant trente-cinq années, un métier que j'ai exercé avec passion, guidée par l'envie d'accompagner les enfants sur le chemin de la découverte et de la confiance en eux..",
         "Comme beaucoup de personnes, la vie m'a également confrontée à des épreuves profondes. Avec le recul, je vois aujourd'hui ces moments autrement. Je crois que certaines épreuves arrivent dans nos vies comme des cadeaux mystérieux : tant que le paquet reste fermé, il peut sembler lourd, injuste ou incompréhensible. Mais lorsque l'on trouve le courage de l'ouvrir, on découvre parfois une richesse intérieure que l'on ne soupçonnait pas.",
         "C'est en acceptant de regarder ces passages difficiles autrement que j'ai découvert les soins énergétiques, et en particulier le Reiki. J'ai eu la chance de rencontrer un maître Reiki exceptionnel, qui m'a guidée avec bienveillance et m'a ouvert la porte d'une autre manière de comprendre la vie.",
         "Depuis maintenant plus de dix-sept ans, j'explore et pratique les soins énergétiques avec passion. Au fil du temps, mon chemin s'est enrichi de nombreuses approches complémentaires : EFT (incluant l'Ho'oponopono et différentes techniques de libération émotionnelle), réflexologie plantaire (où j'ai rencontré Catherine, devenue une amie précieuse), constellations familiales selon Bert Hellinger, et approches symboliques et chamaniques inspirées notamment du travail d'Alejandro Jodorowsky."
@@ -432,7 +430,6 @@
       "formspree_id": "PLACEHOLDER_ID"
     }
   },
-
   "footer": {
     "tagline": "La Fée des Champs et la Fée d'Herbe, accompagner vers l'alignement intérieur",
     "copyright": "© 2026 Catherine Faidherbe & Dominique Deschamps. Tous droits réservés."
