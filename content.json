@@ -31,6 +31,23 @@
       "intro": "Et si ce séminaire était le début d'un nouveau chapitre de votre vie ? Vous traversez une période de transition, vous ressentez le besoin de donner plus de sens à votre vie, ou vous souhaitez vous reconnecter à votre véritable nature.",
       "items": [
         {
+          "id": "brocéliande-2026",
+          "lieu": "Lieu-dit Les Bouyères, Saint-Malon-sur-Mel, France",
+          "titre": "Séjour immersif d'éveil intérieur et de reconnexion à soi",
+          "sous_titre": "Explorer vos ressources intérieures",
+          "dates": "12 au 17 Juin 2026",
+          "places": "6 Places",
+          "programme": [
+            "Constellations familiales",
+            "Méditations",
+            "Sensibilisation à l'alimentation saine et équilibrée",
+            "Sorties en forêt",
+            "Prix : 1100€"
+          ],
+          "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
+          "cta": "Je réserve ma place"
+        },
+        {
           "id": "dohan-2026",
           "lieu": "Dohan, Belgique",
           "titre": "Le Temps Retrouvé",
@@ -65,23 +82,6 @@
             "Balades",
             "Méditations",
             "EFT",
-            "Prix : 1100€"
-          ],
-          "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
-          "cta": "Je réserve ma place"
-        },
-        {
-          "id": "brocéliande-2026",
-          "lieu": "Lieu-dit Les Bouyères, Saint-Malon-sur-Mel, France",
-          "titre": "Séjour immersif d'éveil intérieur et de reconnexion à soi",
-          "sous_titre": "Explorer vos ressources intérieures",
-          "dates": "12 au 17 Juin 2026",
-          "places": "6 Places",
-          "programme": [
-            "Constellations familiales",
-            "Méditations",
-            "Sensibilisation à l'alimentation saine et équilibrée",
-            "Sorties en forêt",
             "Prix : 1100€"
           ],
           "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
