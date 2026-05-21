@@ -45,7 +45,7 @@
             "Sorties en forêt"
           ],
           "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
-          "cta": "Je réserve ma place"
+          "cta": "Je réserve ma place en complétant le formulaire en bas de la page"
         },
         {
           "id": "dohan-2026",
@@ -65,7 +65,7 @@
             "Atelier du rire"
           ],
           "calendly_url": "https://calendly.com/hugo-hismans/seminaire-dohan-octobre-2026",
-          "cta": "Je réserve ma place"
+          "cta": "Je réserve ma place en complétant le formulaire en bas de page"
         },
         {
           "id": "coxyde-2027",
@@ -85,7 +85,7 @@
             "EFT"
           ],
           "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
-          "cta": "Je réserve ma place"
+          "cta": "Je réserve ma place  en complétant le formulaire en bas de page"
         }
       ]
     },
