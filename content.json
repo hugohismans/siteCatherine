@@ -31,44 +31,6 @@
       "intro": "Et si ce séminaire était le début d'un nouveau chapitre de votre vie ? Vous traversez une période de transition, vous ressentez le besoin de donner plus de sens à votre vie, ou vous souhaitez vous reconnecter à votre véritable nature.",
       "items": [
         {
-          "id": "brocéliande-2026",
-          "lieu": "Brocéliande, Lieu-dit Les Bouyères, Saint-Malon-sur-Mel, France",
-          "titre": "Séjour immersif d'éveil intérieur et de reconnexion à soi",
-          "sous_titre": "Explorer vos ressources intérieures",
-          "dates": "12 au 17 Juin 2026",
-          "places": "6 Places",
-          "prix": "1100 €",
-          "programme": [
-            "Constellations familiales",
-            "Méditations",
-            "Sensibilisation à l'alimentation saine et équilibrée",
-            "Sorties en forêt"
-          ],
-          "calendly_url": "https://calendly.com/hugo-hismans/seminaire-coxyde-janvier-2027",
-          "cta": "Réservation par formulaire"
-        },
-        {
-          "id": "dohan-2026",
-          "lieu": "Dohan, Belgique",
-          "titre": "Le Temps Retrouvé",
-          "sous_titre": "Se déposer, respirer, se reconnecter",
-          "dates": "21 au 25 octobre 2026",
-          "places": "6 places",
-          "prix": "975 €",
-          "programme": [
-            "Constellation",
-            "Méditations",
-            "Balade",
-            "Accords toltèques",
-            "Massages",
-            "Sensibilisation à l'alimentation équilibrée",
-            "Atelier du rire",
-            "Espaces réservés aux \"surprises\""
-          ],
-          "calendly_url": "https://calendly.com/hugo-hismans/seminaire-dohan-octobre-2026",
-          "cta": "Renseignements par message"
-        },
-        {
           "id": "coxyde-2027",
           "lieu": "Saint Idesbald, Belgique",
           "titre": "Rayonner et recevoir en 2027",
@@ -268,14 +230,16 @@
           "image": "images/formation-mains.jpg",
           "title": "Massage des mains",
           "duree": "1 journée",
-          "tarif": "110 €"
+          "tarif": "110 €",
+          "extras": ""
         },
         {
           "id": "formation-assis-cranien",
           "image": "images/formation-assis-cranien.jpg",
           "title": "Massage assis / crânien",
           "duree": "1 journée",
-          "tarif": "110 €"
+          "tarif": "110 €",
+          "extras": ""
         },
         {
           "id": "formation-bol-kansu",
@@ -290,35 +254,40 @@
           "image": "images/formation-dos.jpg",
           "title": "Massage du dos",
           "duree": "2 journées",
-          "tarif": "220 €"
+          "tarif": "220 €",
+          "extras": ""
         },
         {
           "id": "formation-relaxant",
           "image": "images/formation-relaxant.jpg",
           "title": "Massage relaxant",
           "duree": "2 journées",
-          "tarif": "220 €"
+          "tarif": "220 €",
+          "extras": ""
         },
         {
           "id": "formation-prenatal",
           "image": "images/formation-prenatal.jpg",
           "title": "Massage de la future maman",
           "duree": "2 journées",
-          "tarif": "220 €"
+          "tarif": "220 €",
+          "extras": ""
         },
         {
           "id": "formation-emotionnel",
           "image": "images/formation-emotionnel.jpg",
           "title": "Massage émotionnel",
           "duree": "2 journées",
-          "tarif": "220 €"
+          "tarif": "220 €",
+          "extras": ""
         },
         {
           "id": "formation-reflexologie",
           "image": "images/formation-reflexologie.jpg",
           "title": "Réflexologie plantaire",
           "duree": "6 journées",
-          "tarif": "660 € (payable en 3×)"
+          "tarif": "660 € (payable en 3×)",
+          "extras": ""
         }
       ]
     },
@@ -388,7 +357,8 @@
           "duree": "1 h 30",
           "tarif": "70 €",
           "description": "Un temps de dialogue pour poser ce que tu vis, puis l'imposition des mains comme passage entre les mondes subtils. Je ne fais pas, je laisse passer.",
-          "long_description": "Nous commençons par un temps de dialogue qui permet de poser des mots sur ce que tu vis, ce que tu ressens, ce que tu veux transformer ou renforcer. On identifie ensemble une intention claire pour orienter le soin. Par l'imposition des mains, je deviens un passage : un canal ouvert, relié aux mondes subtils. Dans ce silence vibrant, les énergies lumineuses s'approchent, elles ne forcent rien, elles accompagnent. Dans cet espace sacré, quelque chose se réaligne, se libère, se réveille."
+          "long_description": "Nous commençons par un temps de dialogue qui permet de poser des mots sur ce que tu vis, ce que tu ressens, ce que tu veux transformer ou renforcer. On identifie ensemble une intention claire pour orienter le soin. Par l'imposition des mains, je deviens un passage : un canal ouvert, relié aux mondes subtils. Dans ce silence vibrant, les énergies lumineuses s'approchent, elles ne forcent rien, elles accompagnent. Dans cet espace sacré, quelque chose se réaligne, se libère, se réveille.",
+          "indications": []
         },
         {
           "id": "constellation-rer",
@@ -398,7 +368,8 @@
           "duree": "1 h 30",
           "tarif": "70 €",
           "description": "Une approche de constellation centrée sur le ressenti du corps. Le corps ressent ce que l'histoire n'a jamais pu dire.",
-          "long_description": "Après un temps d'échange pour clarifier la problématique, tu t'allonges confortablement sur la table et entres dans un état de relaxation guidée. À partir des sensations corporelles, des émotions et des intuitions, les personnes du système sont invitées une à une dans l'espace intérieur de la constellation. Cette exploration permet de ressentir, comprendre et transformer certaines empreintes émotionnelles profondes, dans un cadre doux et sécurisant."
+          "long_description": "Après un temps d'échange pour clarifier la problématique, tu t'allonges confortablement sur la table et entres dans un état de relaxation guidée. À partir des sensations corporelles, des émotions et des intuitions, les personnes du système sont invitées une à une dans l'espace intérieur de la constellation. Cette exploration permet de ressentir, comprendre et transformer certaines empreintes émotionnelles profondes, dans un cadre doux et sécurisant.",
+          "indications": []
         },
         {
           "id": "constellation-figurines",
@@ -408,7 +379,8 @@
           "duree": "1 h 30",
           "tarif": "70 €",
           "description": "À l'aide de figurines ou d'objets symboliques, les membres du système sont représentés pour rendre visibles les dynamiques invisibles.",
-          "long_description": "Cette approche offre un espace plus intime pour explorer une problématique personnelle ou familiale. Elle permet de prendre le temps d'observer, de ressentir et d'intégrer les émotions avec douceur, dans un cadre confidentiel et sécurisé. Particulièrement adaptée aux personnes qui souhaitent avancer à leur rythme."
+          "long_description": "Cette approche offre un espace plus intime pour explorer une problématique personnelle ou familiale. Elle permet de prendre le temps d'observer, de ressentir et d'intégrer les émotions avec douceur, dans un cadre confidentiel et sécurisé. Particulièrement adaptée aux personnes qui souhaitent avancer à leur rythme.",
+          "indications": []
         },
         {
           "id": "constellation-collective",
@@ -418,7 +390,8 @@
           "duree": "Sur inscription",
           "tarif": "80 € constellé·e · 40 € représentant·e",
           "description": "Les constellations familiales en groupe permettent de mettre en lumière les dynamiques invisibles qui influencent notre vie.",
-          "long_description": "Grâce aux participants qui représentent les membres du système, les relations et les émotions prennent forme et révèlent ce qui agit en profondeur dans l'histoire familiale. Ce travail permet de comprendre des schémas répétitifs, apaiser des conflits, retrouver sa juste place dans son système et ouvrir un nouvel élan dans sa vie. Chaque personne a une place juste dans son système. La retrouver change tout."
+          "long_description": "Grâce aux participants qui représentent les membres du système, les relations et les émotions prennent forme et révèlent ce qui agit en profondeur dans l'histoire familiale. Ce travail permet de comprendre des schémas répétitifs, apaiser des conflits, retrouver sa juste place dans son système et ouvrir un nouvel élan dans sa vie. Chaque personne a une place juste dans son système. La retrouver change tout.",
+          "indications": []
         },
         {
           "id": "eft",
@@ -428,7 +401,8 @@
           "duree": "1 h 30",
           "tarif": "70 €",
           "description": "Une méthode douce et puissante de libération émotionnelle qui combine la verbalisation consciente et le tapping sur certains points d'acupuncture.",
-          "long_description": "Ce soin apaise les émotions intenses, déprogramme les schémas limitants et restaure la sécurité intérieure. Il est particulièrement bénéfique en cas de peurs, stress, anxiété, blocages émotionnels ou relationnels récurrents, ou difficulté à faire un choix. La séance est interactive et guidée en douceur, tu es pleinement acteur·rice de ta libération."
+          "long_description": "Ce soin apaise les émotions intenses, déprogramme les schémas limitants et restaure la sécurité intérieure. Il est particulièrement bénéfique en cas de peurs, stress, anxiété, blocages émotionnels ou relationnels récurrents, ou difficulté à faire un choix. La séance est interactive et guidée en douceur, tu es pleinement acteur·rice de ta libération.",
+          "indications": []
         }
       ]
     },
